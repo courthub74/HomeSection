@@ -739,7 +739,7 @@ $firstblue: #58a6ff;
 }
 
 // Asus Zenbook Fold Portrait
-@media screen and (min-width: 853px) and (max-width: 911px) {
+@media screen and (min-width: 853px) and (max-width: 895px) {
     .home_section {
         background-color: $darkblue;
         height: 50vh;
@@ -817,8 +817,8 @@ $firstblue: #58a6ff;
     }
 }
 
-// IPad and Landscapes
-@media screen and (min-width: 912px) and (max-width: 915px) {
+// IPhone XR Landscape
+@media screen and (min-width: 896px) and (max-width: 912px) {
     .home_section {
         background-color: $darkblue;
         height: 100vh;
@@ -897,7 +897,86 @@ $firstblue: #58a6ff;
 }
 
 // IPad and Landscapes
-@media screen and (min-width: 916px) and (max-width: 1020px) {
+@media screen and (min-width: 913px) and (max-width: 915px) {
+    .home_section {
+        background-color: $darkblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home_content {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15ch;
+            .headshot {
+                width: 25vw;
+                height: 25vw;
+                border-radius: 50%;
+                background-color: slategray;
+                background-color: #00C6C3;
+                color: $darkblue;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2ch 0;
+            }
+            .home_words {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 4ch;
+                .name_description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3ch;
+                    .name_name {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.8rem, 3rem);
+                        font-weight: bold;
+                    }
+                    .job_description {
+                        border: 1px solid $portfolios;
+                        border-radius: 5px;
+                        background-color: $portfolios;
+                        color: $jobdescription;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.3rem, 2rem);
+                        text-align: center;
+                        padding: .5ch;
+                    }
+                }
+                .slogan {
+                    font-family: 'Inter', sans-serif;
+                    font-size: clamp(1rem, 1rem, 2rem);
+                    color: white;
+                    text-align: center;
+                    // font-weight: bold;
+                }
+                .learn_more {
+                    border: 1px solid $portfolios;
+                    border-radius: 5px;
+                    background-color: $portfolios;
+                    padding: 1ch 8ch;
+                    a {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, .7rem, 2rem);
+                        // font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// IPad and Landscapes
+@media screen and (min-width: 916px) and (max-width: 931px) {
     .home_section {
         background-color: $darkblue;
         height: 50vh;
@@ -975,8 +1054,10 @@ $firstblue: #58a6ff;
     }
 }
 
-// Nest Hub
-@media screen and (min-width: 1024px) and (max-width: 1080px) {
+
+
+// IPad Mini
+@media screen and (min-width: 932px) and (max-width: 1023px) {
     .home_section {
         background-color: $darkblue;
         height: 100vh;
@@ -1045,6 +1126,322 @@ $firstblue: #58a6ff;
                         color: white;
                         font-family: 'Inter', sans-serif;
                         font-size: clamp(1rem, 1.1rem, 2rem);
+                        // font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// IPad Pro
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+    .home_section {
+        background-color: $darkblue;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home_content {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15ch;
+            .headshot {
+                width: 23vw;
+                height: 23vw;
+                border-radius: 50%;
+                background-color: slategray;
+                background-color: #00C6C3;
+                color: $darkblue;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2ch 0;
+            }
+            .home_words {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5ch;
+                .name_description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3ch;
+                    .name_name {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.8rem, 3rem);
+                        font-weight: bold;
+                    }
+                    .job_description {
+                        border: 1px solid $portfolios;
+                        border-radius: 5px;
+                        background-color: $portfolios;
+                        color: $jobdescription;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.2rem, 2rem);
+                        text-align: center;
+                        padding: 1ch;
+                    }
+                }
+                .slogan {
+                    font-family: 'Inter', sans-serif;
+                    font-size: clamp(1rem, 1.1rem, 2rem);
+                    color: white;
+                    text-align: center;
+                    // font-weight: bold;
+                }
+                .learn_more {
+                    border: 1px solid $portfolios;
+                    border-radius: 5px;
+                    background-color: $portfolios;
+                    padding: 1.5ch 9ch;
+                    a {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1rem, 2rem);
+                        // font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Desktops 1080 - 1280 some tablets
+@media screen and (min-width: 1081px) and (max-width: 1299px) {
+    .home_section {
+        background-color: $darkblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home_content {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25ch;
+            .headshot {
+                width: 30vw;
+                height: 30vw;
+                border-radius: 50%;
+                background-color: slategray;
+                background-color: #00C6C3;
+                color: $darkblue;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2ch 0;
+            }
+            .home_words {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 6ch;
+                .name_description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3ch;
+                    .name_name {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 2.5rem, 3rem);
+                        font-weight: bold;
+                    }
+                    .job_description {
+                        border: 1px solid $portfolios;
+                        border-radius: 5px;
+                        background-color: $portfolios;
+                        color: $jobdescription;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.5rem, 2rem);
+                        text-align: center;
+                        padding: .5ch;
+                    }
+                }
+                .slogan {
+                    font-family: 'Inter', sans-serif;
+                    font-size: clamp(1rem, 1.3rem, 2rem);
+                    color: white;
+                    text-align: center;
+                    // font-weight: bold;
+                }
+                .learn_more {
+                    border: 1px solid $portfolios;
+                    border-radius: 5px;
+                    background-color: $portfolios;
+                    padding: 1ch 10ch;
+                    a {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.2rem, 2rem);
+                        // font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// IPad Pro Landscape
+@media screen and (min-width: 1300px) and (max-width: 1399px) {
+    .home_section {
+        background-color: $darkblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home_content {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20ch;
+            .headshot {
+                width: 30vw;
+                height: 30vw;
+                border-radius: 50%;
+                background-color: slategray;
+                background-color: #00C6C3;
+                color: $darkblue;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2ch 0;
+            }
+            .home_words {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 6ch;
+                .name_description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3ch;
+                    .name_name {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 2.5rem, 3rem);
+                        font-weight: bold;
+                    }
+                    .job_description {
+                        border: 1px solid $portfolios;
+                        border-radius: 5px;
+                        background-color: $portfolios;
+                        color: $jobdescription;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.5rem, 2rem);
+                        text-align: center;
+                        padding: .5ch;
+                    }
+                }
+                .slogan {
+                    font-family: 'Inter', sans-serif;
+                    font-size: clamp(1rem, 1.3rem, 2rem);
+                    color: white;
+                    text-align: center;
+                    // font-weight: bold;
+                }
+                .learn_more {
+                    border: 1px solid $portfolios;
+                    border-radius: 5px;
+                    background-color: $portfolios;
+                    padding: 1ch 10ch;
+                    a {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.2rem, 2rem);
+                        // font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Larger Desktops
+@media screen and (min-width: 1400px) {
+    .home_section {
+        background-color: $darkblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home_content {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40ch;
+            .headshot {
+                width: 22vw;
+                height: 22vw;
+                border-radius: 50%;
+                background-color: slategray;
+                background-color: #00C6C3;
+                color: $darkblue;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2ch 0;
+            }
+            .home_words {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 6ch;
+                .name_description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3ch;
+                    .name_name {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 2.5rem, 3rem);
+                        font-weight: bold;
+                    }
+                    .job_description {
+                        border: 1px solid $portfolios;
+                        border-radius: 5px;
+                        background-color: $portfolios;
+                        color: $jobdescription;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.5rem, 2rem);
+                        text-align: center;
+                        padding: .5ch;
+                    }
+                }
+                .slogan {
+                    font-family: 'Inter', sans-serif;
+                    font-size: clamp(1rem, 1.3rem, 2rem);
+                    color: white;
+                    text-align: center;
+                    // font-weight: bold;
+                }
+                .learn_more {
+                    border: 1px solid $portfolios;
+                    border-radius: 5px;
+                    background-color: $portfolios;
+                    padding: 1ch 10ch;
+                    a {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: clamp(1rem, 1.2rem, 2rem);
                         // font-weight: bold;
                         text-decoration: none;
                     }
